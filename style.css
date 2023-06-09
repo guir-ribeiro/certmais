@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+}
+
+header{
+    background-color: #0a304c;
+    width: 100vw;
+    min-height: 120px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+
+}
+#menu{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu > img{
+    display: none;
+}
+
+#nav-web{
+    display: flex;
+    align-items: center;
+}
+
+#nav-web > ul, #nav-mobile > ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+#nav-mobile{
+    display: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#nav-web > ul > li{
+    position: relative;
+}
+
+#nav-web > ul > li::after{
+    display: flex;
+    position: absolute;
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: .4s ease-in-out;
+}
+
+#nav-web > ul > li:hover::after{
+    display: flex;
+    content: " ";
+    width: 100%;
+    background-color: #fff;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+#carrossel{
+    background-image: url(./assets/image/background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 120px;
+    margin: 0 auto;
+}
+section{
+    min-height: calc(100vh - 120px);
+    padding-top: 120px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+#sobre{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+}
+#texto-sobre{
+    width: 50%;
+    line-height: 1.5rem;
+}
+
+#img-sobre{
+    width: 40%;
+    
+}
+
+#img-sobre > img{
+    width: 100%;
+}
+
+#texto-sobre > h2{
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+#texto-sobre > hr{
+    border: .1px solid #4d4d4d26;
+}
+
+
+p{
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: rgb(36, 36, 36);
+    margin-bottom: 30px;
+}
+
+button{
+    background-color: #69a63e;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    color: #fff;
+    transition: .3s linear;
+}
+
+button:hover{
+    background-color: #92be72;
+    transition: .3s linear;
+    box-shadow: 3px 3px 2px #26341649;
+
+}
+
+/* ---------------------------------------------------------------------------- */
+
+#section-certificados{
+    padding-top: 50px;
+    width: 80%;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+#header-certificados, #perguntas-header{
+    text-align: center;
+    width: 100%;
+
+}
+
+h2{
+    font-size: 2rem;
+    color: #0a304c;
+}
+
+#header-certificados > hr{
+    margin: 20px 0;
+}
+
+#certificados{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    
+}
+.certificado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}   
+
+.certificado-texto{
+    font-size: .8rem;
+    padding: 20px;
+    padding-bottom: 40px;
+    background-color: #0a304c;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: -15px;
+    margin-bottom: -30px;
+    max-width: 350px;
+    text-align: center;
+    z-index: -1;
+}
+.certificado-texto > h2{
+    margin: 10px 0px;
+    color: #fff;
+}
+
+.certificado-texto > p{
+    color: #fff;
+
+}
+
+/* --------------------------------------------------------------------------- */
+#whats{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+#whats > a > img{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+/* ---------------------------------------------------------------------------- */
+
+#duvidas{
+    padding-top: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    
+}
+
+#perguntas-header > hr{
+    margin: 20px 0px;
+}
+
+
+#perguntas{
+    width: 100%;
+}
+
+details{
+    background-color: #0a304c;
+    color: #fff;
+    border-radius: 20px;
+}
+
+details > summary{
+    margin-top: 10px;
+    background-color: #0a304c;
+    padding: 20px 5px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+details > hr{
+    margin-top: 5px;
+    border: 1px solid #ffffff7d;
+}
+
+details > p{
+    padding: 15px;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+
+footer{
+    background-color: #0a304c;
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+
+}
+
+#social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#social > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width:1000px) {
+
+    #nav-web{
+        display: none;
+    }
+
+    #nav-mobile{
+        /* display: flex; */
+        list-style: none;
+        transition: .5s linear;
+    }
+
+    #nav-mobile > ul {
+        flex-direction: column;
+    }  
+    
+    #menu > img{
+    display: block;
+    }
+
+    #sobre{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #texto-sobre{
+        width: 100%;
+        text-align: center;
+        /* line-height: 1.5rem; */
+    }
+    
+    #img-sobre{
+        width: 50%;
+        margin-bottom: 50px;
+        
+    }
+    
+    #img-sobre > img{
+        width: 100%;
+    }
+
+    #texto-sobre > h2{
+        display: none;
+        /* font-size: 2.5rem;
+        margin-bottom: 30px; */
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    html, body{
+        font-size: 14px;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        /* margin: 0px 0px; */
+    }
+
+    #footer-img > img{
+        width:100px;
+    }
+
+    #social{
+        display: none;
+    }
+}
+
+

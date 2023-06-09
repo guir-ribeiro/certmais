@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certmais</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        main{
+            min-height:100vh;
+            padding-top: 120px;
+            /* background-color: #000; */
+        }
+
+
+        .certificado-page{
+            /* background-color: gray; */
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            padding: 40px 30px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+        .certificado-descricao{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .imagem-certificado{
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .container{
+            margin: 30px 0;
+            padding-left: 30px;
+        }
+
+
+        .listas-certidicados{
+            margin: 50px 40px;
+        }
+        .listas-certidicados > li{
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .container > hr{
+            margin: 30px 0px;
+        }
+        .container-produto{
+            /* background-color: #000; */
+            position: relative;
+            width: 31%;
+            min-width: 300px;
+        }
+
+        .produto{
+            width: 30%;
+            max-width: 400px;
+            /* border: 1px solid #0a304c; */
+            position: fixed;
+            right: 30px;
+            padding: 3%;
+            border-radius: 10px;
+            box-shadow: 1px 1px 4px #0a314c78;
+            color: #000;
+
+        }
+
+        .produto > h2{
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .produto > p{
+            text-align: center;
+            margin-top: 5px;
+            font-size: 0.8rem;
+        }
+
+        .div-select{
+            width: 100%;
+            /* height: 40px; */
+            display: flex;
+            /* flex-direction: column; */
+            /* align-items: space-between; */
+            justify-content: space-around;
+            margin-bottom: 10px;
+            
+        }
+
+        select{
+            width: 50%;
+            height: 1.2rem;
+        }
+
+        .valores{
+            margin-top: 30px;
+        }
+
+        .valores > p{
+            margin: 0px ;
+            color: gray;
+            text-decoration: line-through;
+        }
+
+        .botao{
+            
+            display: flex;
+            align-items: center;
+            margin: 20px 0px;
+        }
+        .botao > a{
+            width: 100%;
+            text-align: center;
+        }
+
+        .botao > a > button{
+            width: 90%;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <header>
+
+        <div id="menu">
+                <div id="logomenu">
+                    <a href=""><img src="./assets/image/navbar-header.png" alt="logomenu"></a>
+                    
+                </div>
+                <nav id="nav-web">
+                    <ul>
+                        <li><a href="#">CERTMAIS</a></li>
+                        <li><a href="#section-certificados">CERTIFICADOS</a></li>
+                        <li><a href="https://certmais.com/index.php/suporte/" target="_blank">SUPORTE</a></li>
+                        <li><a href="#">CONTATO</a></li>
+                    </ul>
+                </nav>
+                <img src="./assets/image/menu.png" height="40px" alt="menu" onclick="abrirMenu()">
+        </div>
+
+        <nav id="nav-mobile">
+            <ul>
+                <li><a href="#">CERTMAIS</a></li>
+                <li><a href="#section-certificados">CERTIFICADOS</a></li>
+                <li><a href="target="_blank"">SUPORTE</a></li>
+                <li><a href="#">CONTATO</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="certificado-page">
+            <div class="certificado-descricao">
+                <div class="imagem-certificado">
+                    <img src="./assets/image/E-CNPJ.png" height=300px" alt="">
+                </div>
+                <div class="descricao-text" >
+
+                    <div class="container">
+                        <h2>Certificado e-CNPJ</h2>
+                        <p>O e-CNPJ é um Certificado destinado a empresas e está diretamente vinculado à seu CNPJ, garantindo validade jurídica na realização de vários serviços eletrônicos:</p>
+    
+                        <ul class="listas-certidicados">
+                            <li>Assinatura digital de documentos eletrônicos e com validade juídica</li>
+                            <li>Emissão de nota fiscal</li>
+                            <li>Acesso à vários portais do gorverno</li>
+                            <li>Recolhimento FGTS</li>
+                            <li>Demonstrativo de Apuração de Contribuições Sociais(DACON)</li>
+                            <li>Declarações de Débitos e Créditos Tributários Federais (DCTF)</li>
+                            <li>Declaração de Informações Econômico-Fiscais das Pessoas Jurídicas (DIPJ)</li>
+                            <li>Entre outros.</li>
+                        </ul>
+                    </div>
+
+                    <hr>
+
+                    <div class="container">
+                        <h2>e-CNPJ A1</h2>
+                        <ul class="listas-certidicados">
+                            <li>Validade de um ano</li>
+                            <li>Instalado em seu computador</li>
+                            <li>Protegido por senha de acesso</li>
+                        </ul>
+                    </div>
+
+                    <hr>
+
+                    <div class="container">
+                        <h2>e-CNPJ A3</h2>
+                        <ul class="listas-certidicados">
+                            <li>Validade de até 3 anos</li>
+                            <li> Disponivel em cartão ou token(similar a um PenDrive)</li>
+                            <li>Protegido por senha de acesso</li>
+                            <li>Você pode levar para qualquer lugar</li>
+                        </ul>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="container">
+                        <h2>Documentos necessários</h2>
+                        <ul class="listas-certidicados">
+                            <li>Validade de até 3 anos</li>
+                            <li> Disponivel em cartão ou token(similar a um PenDrive)</li>
+                            <li>Protegido por senha de acesso</li>
+                            <li>Você pode levar para qualquer lugar</li>
+                        </ul>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+            <div class="container-produto">
+                <div class="produto">
+                    <h2>e-CNPJ</h2>
+                    <p>Escolha o certificado ideal para você!</p>
+                    <div class="div-select"> Modelo: <select name="" id="" required>
+                        <option value="" disabled> Selecione</option>
+                        <option value="">A1 - Arquivo</option>
+                        <option value="">A3 - Token</option>
+                        <option value="">A3 - Cartão</option>
+                    </select> </div>
+                    <div class="div-select"> Validade: <select name="" id="" required>
+                        <option value="" disabled> Selecione</option>
+                        <option value=""> Dinamico</option>
+    
+                    </select></div>
+                    <div class="div-select" > Formato: <select name="" id="" required>
+                        <option value="" disabled> Selecione</option>
+                        <option value="">presencial</option>
+                        <option value="">Videoconferencia</option>
+                    </select></div>
+                    <hr>
+
+                    <div class="valores">
+                        <p>R$ 200,00</p>
+                        <h2>R$ 180,00</h2>
+                    </div>
+                    <div class="botao">
+                        <a href="#"><button>Comprar</button></a>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+</body>
+</html>
