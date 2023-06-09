@@ -262,13 +262,14 @@ details{
     background-color: #0a304c;
     color: #fff;
     border-radius: 20px;
+    color: #fff;
 }
 
 details > summary{
     margin-top: 10px;
     background-color: #0a304c;
     padding: 20px 5px;
-    color: #fff;
+    
     border-radius: 20px;
 }
 
@@ -279,6 +280,7 @@ details > hr{
 
 details > p{
     padding: 15px;
+    color: #fff;
 }
 
 
@@ -308,17 +310,136 @@ footer{
     gap: 10px;
 }
 
+main{
+    min-height:100vh;
+    padding-top: 120px;
+}
+
+
+.certificado-page{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.certificado-descricao{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imagem-certificado{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.container{
+    margin: 30px 0;
+    padding-left: 30px;
+}
+
+
+.listas-certidicados{
+    margin: 50px 40px;
+}
+.listas-certidicados > li{
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.container > hr{
+    margin: 30px 0px;
+}
+.container-produto{
+    position: relative;
+    width: 31%;
+    min-width: 300px;
+}
+
+.produto{
+    width: 30%;
+    max-width: 400px;
+    position: fixed;
+    right: 30px;
+    padding: 3%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px #0a314c78;
+    color: #000;
+
+}
+
+.produto > h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.produto > p{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.8rem;
+}
+
+.div-select{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+select{
+    width: 50%;
+    height: 2rem;
+}
+
+.valores{
+    margin-top: 30px;
+}
+
+.valores > p{
+    margin: 0px ;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.botao{
+    
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+.botao > a{
+    width: 100%;
+    text-align: center;
+}
+
+.botao > a > button{
+    width: 90%;
+}
+
+
 @media screen and (max-width:1000px) {
+
+    html{
+        scroll-padding-top: 200px;
+    }
 
     #nav-web{
         display: none;
     }
 
     #nav-mobile{
-        /* display: flex; */
         list-style: none;
         transition: .5s linear;
     }
+    
 
     #nav-mobile > ul {
         flex-direction: column;
@@ -339,7 +460,6 @@ footer{
     #texto-sobre{
         width: 100%;
         text-align: center;
-        /* line-height: 1.5rem; */
     }
     
     #img-sobre{
@@ -354,12 +474,51 @@ footer{
 
     #texto-sobre > h2{
         display: none;
-        /* font-size: 2.5rem;
-        margin-bottom: 30px; */
     }
+
+    .certificado-page{
+    flex-direction: column;
+    align-items: center;
+}
+    .certificado-descricao{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-produto{
+    position: relative;
+    width: 90%;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    }
+
+    .produto{
+    width: 100%;
+    max-width: 800px;
+    position: static;
+    padding: 5%;
+    }
+
+    .produto > hr{
+        margin: 30px 0px;
+    }
+
+    .div-select{
+
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 30px;
+        
+    }
+
 }
 
-@media screen and (max-width:1000px) {
+
+
+/* @media screen and (max-width:1000px) {
 
     html, body{
         font-size: 14px;
@@ -370,7 +529,6 @@ footer{
         align-items: center;
         gap: 10px;
         justify-content: center;
-        /* margin: 0px 0px; */
     }
 
     #footer-img > img{
@@ -380,6 +538,6 @@ footer{
     #social{
         display: none;
     }
-}
+} */
 
 
