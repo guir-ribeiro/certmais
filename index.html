@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certmais</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/image/favcon.png" type="image/x-icon">
 
@@ -14,29 +16,25 @@
     
     <header>
 
-        <div id="menu">
-                <div id="logomenu">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
+                <div class="navbar-brand" id="logomenu">
                     <a href="./index.html"><img src="./assets/image/navbar-header.png" alt="logomenu"></a>
                     
                 </div>
-                <nav id="nav-web">
-                    <ul>
-                        <li><a href="#">CERTMAIS</a></li>
-                        <li><a href="#section-certificados">CERTIFICADOS</a></li>
-                        <li><a href="https://certmais.com/index.php/suporte/" target="_blank">SUPORTE</a></li>
-                        <li><a href="#">CONTATO</a></li>
-                    </ul>
-                </nav>
-                <img src="./assets/image/menu.png" height="40px" alt="menu" onclick="abrirMenu()">
-        </div>
 
-        <nav id="nav-mobile">
-            <ul>
-                <li><a href="#">CERTMAIS</a></li>
-                <li><a href="#section-certificados">CERTIFICADOS</a></li>
-                <li><a href="target="_blank"">SUPORTE</a></li>
-                <li><a href="#">CONTATO</a></li>
-            </ul>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="navbarNav" class="navbar-collapse collapse">
+                    <nav class="navbar-nav nav-pills ">
+                        <li class="nav-item"><a class="nav-link" href="#">CERTMAIS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section-certificados">CERTIFICADOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://certmais.com/index.php/suporte/" target="_blank">SUPORTE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">CONTATO</a></li>
+                    </nav>
+                </div>
+
         </nav>
 
     </header>
@@ -47,11 +45,11 @@
 
     <section id="sobre">
         <div id="texto-sobre">
-            <h2>A CERTMAIS</h2>
+            <h2 >A CERTMAIS</h2>
             <hr>
             <p>No mercado paraibano desde 2010, a CERTMAIS tem a proposta de prestar o melhor serviço, com a maior agilidade. Iniciamos nosso trabalho na cidade de Picuí e, hoje, já estamos presentes em diversas cidades da Paraíba, Rio Grande do Norte e Pernambuco.</p>
             <p>Estamos atentos às necessidades de nossos clientes e às obrigatoriedades impostas por instâncias da Administração Pública para orientar e fornecer a melhor opção para sua empresa.</p>
-            <a href=""><button>VER MAIS</button></a>
+            <a href=""><button class="button-mais">VER MAIS</button></a>
         </div>
         <div id="img-sobre">
             <img src="./assets/image/logotipo-certmais.png" alt="logotipo-certmais">
@@ -74,7 +72,7 @@
                     <h2>e-CNPJ</h2>
                     <p>Para empresas, com validade jurídica aos atos eletrônicos realizados na receita federal</p>
                 </div>
-                <a href="./e-cnpj.html"><button>SAIBA MAIS</button></a>
+                <a href="./e-cnpj.html"><button class="button-mais">SAIBA MAIS</button></a>
             </div>
             <div class="certificado">
                 <img src="./assets/image/E-CPF.png" height="200px" alt="E-CPF">
@@ -82,7 +80,7 @@
                     <h2>e-CPF</h2>
                     <p>Para empresas pessoas físicas transmitirem dados e informações com validade jurídica</p>
                 </div>
-                <a href="./e-cpf.html"><button>SAIBA MAIS</button></a>
+                <a href="./e-cpf.html"><button class="button-mais">SAIBA MAIS</button></a>
             </div>
         </div>
     </section>
@@ -131,11 +129,15 @@
         </div>
     </footer>
 
-    <div id="whats">
+    <!-- <div id="whats">
         <a href="https://api.whatsapp.com/send/?phone=5588982193229&text=Quero+saber+mais+sobre+certificado+digital&type=phone_number&app_absent=0" target="_blank" ><img src="./assets/image/whatsapp-icon.png" alt="whatsapp-icon"></a>
-    </div>
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <script src="./script.js"></script>
+
+    <script src="./menu.js"></script>
 
 </body>
 </html>

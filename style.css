@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 html, body{
     width: 100vw;
@@ -13,21 +14,28 @@ html, body{
 
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 120px;
+    scroll-padding-top: 50px;
 }
+
+
 
 header{
     background-color: #0a304c;
-    width: 100vw;
-    min-height: 120px;
+    width: 100%;
+    /* min-height: 120px; */
     padding: 20px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: fixed;
-
 }
+
+header.rolagem{
+    padding: 5px 0px;
+}
+
+
 #menu{
     width: 80%;
     display: flex;
@@ -46,7 +54,7 @@ header{
 #nav-web > ul, #nav-mobile > ul{
     display: flex;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
     list-style: none;
 }
 
@@ -60,26 +68,43 @@ a{
     color: #fff;
 }
 
-#nav-web > ul > li{
+#navbarNav > nav > li{
     position: relative;
 }
 
-#nav-web > ul > li::after{
+#navbarNav > nav > li::after{
     display: flex;
     position: absolute;
     content: " ";
     width: 0%;
     height: 2px;
     background-color: #fff;
-    transition: .4s ease-in-out;
+    transition: .4s ease-in
 }
 
-#nav-web > ul > li:hover::after{
+#navbarNav > nav > li:hover::after{
     display: flex;
     content: " ";
     width: 100%;
     background-color: #fff;
 }
+
+.navbar-nav{
+    display: flex;
+    justify-content: end;
+    flex-grow: 1;
+    --bs-nav-link-padding-x: 1rem;
+}
+
+.nav-pills{
+    --bs-nav-pills-link-active-bg:#92be72;
+}
+
+.navbar-dark, .navbar[data-bs-theme=dark]{
+    --bs-navbar-color: rgb(255, 255, 255, .9);
+}
+
+
 
 /* ---------------------------------------------------------------------------- */
 
@@ -91,6 +116,7 @@ a{
     height: 100vh;
     padding-top: 120px;
     margin: 0 auto;
+
 }
 section{
     min-height: calc(100vh - 120px);
@@ -137,12 +163,17 @@ p{
 button{
     background-color: #69a63e;
     border: none;
-    width: 150px;
-    height: 50px;
+    /* width: 150px;
+    height: 50px; */
     border-radius: 25px;
     font-size: 20px;
     color: #fff;
     transition: .3s linear;
+}
+
+.button-mais{
+    width: 150px;
+    height: 50px;
 }
 
 button:hover{
@@ -151,6 +182,9 @@ button:hover{
     box-shadow: 3px 3px 2px #26341649;
 
 }
+
+
+
 
 /* ---------------------------------------------------------------------------- */
 
@@ -177,6 +211,7 @@ h2{
 
 #header-certificados > hr{
     margin: 20px 0;
+    border: .1px solid #4d4d4d26
 }
 
 #certificados{
@@ -251,6 +286,7 @@ h2{
 
 #perguntas-header > hr{
     margin: 20px 0px;
+    border: .1px solid #4d4d4d26
 }
 
 
@@ -430,6 +466,11 @@ select{
     html{
         scroll-padding-top: 200px;
     }
+
+    header.rolagem{
+        padding: 20px 0px;
+    }
+    
 
     #nav-web{
         display: none;
